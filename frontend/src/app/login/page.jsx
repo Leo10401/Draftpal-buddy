@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useSession, signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
@@ -56,6 +57,24 @@ export default function Login() {
           </svg>
           Sign in with Google
         </button>
+
+        <div className="mt-5 rounded-md border border-amber-300 bg-amber-50 p-3">
+          <p className="text-sm text-amber-900 font-semibold">Hackathon Sign-In Tip</p>
+          <p className="mt-1 text-sm text-amber-800">
+            If Google shows <strong>Google hasn&apos;t verified this app</strong>, click <strong>Advanced</strong> and then choose
+            <strong> Go to draftpal-buddy.vercel.app (unsafe)</strong>.
+          </p>
+          <div className="mt-3 overflow-hidden rounded-md border border-amber-200 bg-white">
+            <Image
+              src="/image.png"
+              alt="Google unverified app screen showing Advanced and continue option"
+              width={1200}
+              height={675}
+              className="h-auto w-full"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </main>
   );

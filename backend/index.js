@@ -36,6 +36,22 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(passport.initialize());
 
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    success: true,
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+  });
+});
+
+app.get('/api/health', (req, res) => {
+  res.status(200).json({
+    success: true,
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+  });
+});
+
 // Enable trust proxy since we're behind a proxy on Render
 app.set('trust proxy', 1);
 
