@@ -14,18 +14,21 @@
     "class-variance-authority": "^0.7.1",
     "cloudinary": "^2.9.0",
     "clsx": "^2.1.1",
+    "face-api.js": "^0.22.2",
     "lucide-react": "^0.577.0",
     "mongoose": "^9.3.0",
     "next": "16.1.6",
     "next-auth": "^5.0.0-beta.30",
     "next-cloudinary": "^6.17.5",
+    "postprocessing": "^6.38.3",
     "radix-ui": "^1.4.3",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-email-editor": "^1.7.11",
     "react-hot-toast": "^2.6.0",
     "reactflow": "^11.11.4",
-    "tailwind-merge": "^3.5.0"
+    "tailwind-merge": "^3.5.0",
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
